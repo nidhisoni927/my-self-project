@@ -8,6 +8,6 @@ import {reduce} from "rxjs";
 })
 export class AppComponent {
   title = 'my-self-project';
-show="green"
+color='blue'
 
 }

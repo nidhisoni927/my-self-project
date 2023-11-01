@@ -1,12 +1,13 @@
-<h1>conditions in angular </h1>
-<ng-template [ngIf]="show=='red'">
-<h1>Red block</h1>
-</ng-template>
+<h1>switch case </h1>
+<div [ngSwitch]="color" >
+ <h2 style="color:red;" *ngSwitchCase="'red'">
+red color
+</h2>
+  <h2  style="color:blue;" *ngSwitchCase="'blue'">
+ blue color
+</h2>
+  <h2 style="color:green;" *ngSwitchCase="'green'">
+    green color
+  </h2>
 
-<ng-template [ngIf]="show=='blue'">
-  <h1>Blue block</h1>
-</ng-template>
-
-<ng-template [ngIf]="show=='green'">
-  <h1>Green block</h1>
-</ng-template>
+</div>
