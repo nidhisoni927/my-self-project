@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-self-project';
-  myEvent(evt: any){
-    console.log(evt);
-
+ name="nidhi"
+  disabledBox=true
+  enableBox()
+  {
+    this.disabledBox=false
   }
 }
