@@ -6,7 +6,7 @@ import {reduce} from "rxjs";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class FooterComponent {
   title = 'my-self-project';
 
 }
