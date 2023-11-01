@@ -1,4 +1,12 @@
 <h1>conditions in angular </h1>
-<h1 *ngIf="show">
-if Block
-</h1>
+<ng-template [ngIf]="show=='red'">
+<h1>Red block</h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='blue'">
+  <h1>Blue block</h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='green'">
+  <h1>Green block</h1>
+</ng-template>
