@@ -1,13 +1,16 @@
-<h1>switch case </h1>
-<div [ngSwitch]="color" >
- <h2 style="color:red;" *ngSwitchCase="'red'">
-red color
-</h2>
-  <h2  style="color:blue;" *ngSwitchCase="'blue'">
- blue color
-</h2>
-  <h2 style="color:green;" *ngSwitchCase="'green'">
-    green color
-  </h2>
+<h1>for loop</h1>
+<table  [border]="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
 
-</div>
+
+
+
+  <tr  *ngFor="let item of data">
+<td>{{item.name}}</td>
+<td>{{item.age}}</td>
+
+</tr>
+</table>
