@@ -1,4 +1,5 @@
 <h1>Welcome to angular</h1>
-<button (click)="myEvent('this is click event')">click me</button>
-<br>
-<input type="text">
+<input type="text" #box />
+<button (click)="getVal(box.value)" > get value </button>
+
+<h2>{{ currentVal }} </h2>
