@@ -1,16 +1,10 @@
-<h1>for loop</h1>
-<table  [border]="1">
-  <tr>
-    <td>Name</td>
-    <td>Age</td>
-  </tr>
+<h1>simple form in angular</h1>
+
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)"   >
+  <input type="text" ngModel name="username" placeholder="enter name"><br> <br>
+  <input type="age" ngModel name="age" placeholder="enter age"><br> <br>
+
+  <button> Get User Value </button>
 
 
-
-
-  <tr  *ngFor="let item of data">
-<td>{{item.name}}</td>
-<td>{{item.age}}</td>
-
-</tr>
-</table>
+</form>

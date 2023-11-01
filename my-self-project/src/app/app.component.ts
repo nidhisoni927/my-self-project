@@ -8,25 +8,9 @@ import {reduce} from "rxjs";
 })
 export class AppComponent {
   title = 'my-self-project';
-  data=[
-    {
-      name: 'anil',
-      age: 28
-    },
-    {
-      name:'jay',
-      age:22
-    },
-    {
-      name: 'nidhi',
-      age: 24
-    }
-
-
-
-
-  ]
-
-
+  getUserValue(value: any)
+  {
+    console.log(value)
+  }
 
 }
