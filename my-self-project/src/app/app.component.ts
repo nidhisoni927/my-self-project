@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-self-project';
- name="nidhi"
-  disabledBox=true
-  enableBox()
-  {
-    this.disabledBox=false
-  }
+show=false
 }
