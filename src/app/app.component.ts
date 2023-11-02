@@ -8,12 +8,6 @@ import {reduce} from "rxjs";
 })
 export class AppComponent {
   title = 'my-self-project';
-color="grey"
-  err=false;
-  updateColor()
-  {
-    this.color="orange"
-  }
 
     }
 
