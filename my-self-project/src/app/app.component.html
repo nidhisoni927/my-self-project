@@ -1,1 +1,10 @@
-<h1>Header & Footer angular</h1>
+<h1>simple form in angular</h1>
+
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)"   >
+  <input type="text" ngModel name="username" placeholder="enter name"><br> <br>
+  <input type="age" ngModel name="age" placeholder="enter age"><br> <br>
+
+  <button> Get User Value </button>
+
+
+</form>

@@ -8,5 +8,9 @@ import {reduce} from "rxjs";
 })
 export class AppComponent {
   title = 'my-self-project';
+  getUserValue(value: any)
+  {
+    console.log(value)
+  }
 
 }
