@@ -1,8 +1,9 @@
 
 <h1>Add bootstrap in angular</h1>
 
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
 <p>
-  <ngb-alert [dismissible]="false">
-    <strong>Warning!</strong> Better check yourself, you're not looking too good.
-  </ngb-alert>
+  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
 </p>
