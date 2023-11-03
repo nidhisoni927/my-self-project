@@ -9,9 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-self-project';
-  name='nidhi soni'
-  today=Date.now()
-  str="hello angular"
-  val=10
+
 
 }
