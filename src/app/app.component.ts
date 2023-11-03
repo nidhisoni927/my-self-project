@@ -9,7 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-self-project';
-  data="nidhi soni"
+  data={
+    name:'nidhi',
+    age:25
+  }
 }
 
 
