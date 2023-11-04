@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import {UserServiveService} from './user-servive.service'
+interface dataType{
+  name:string,
+  age:number,
+  indian:boolean,
+  address:any
+}
 
 @Component({
   selector: 'app-root',
@@ -8,14 +13,17 @@ import {UserServiveService} from './user-servive.service'
 })
 export class AppComponent {
   title = 'my-self-project';
+  getData()
+  {
+    const data:dataType ={
+      name:'Nidhi',
+      age:30,
+      indian:true,
+      address:'127,pune ,MH'
 
-   data: any;
+    }
+    return data;
+  }
 
-constructor(private  user:UserServiveService) {
-  this.user.getData().subscribe(date=>{
-    console.log(this.data)
-    // @ts-ignore
-    this.data=date
-  })
-}
+
 }
