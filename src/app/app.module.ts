@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { CustomStyleDirective } from './custom-style.directive';
 
 
 
@@ -13,7 +12,7 @@ import { CustomStyleDirective } from './custom-style.directive';
   declarations: [
     AppComponent,
 
-    CustomStyleDirective,
+
 
 
   ],
