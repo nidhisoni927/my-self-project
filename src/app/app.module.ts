@@ -6,8 +6,6 @@ import {NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { Error404Component } from './components/error404/error404.component'
 import {AppComponent} from "./app.component";
-import {UserModule} from "./user/user.module";
-import {AdminModule} from "./admin/admin.module";
 
 
 @NgModule({
@@ -17,9 +15,7 @@ import {AdminModule} from "./admin/admin.module";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    UserModule,
-    AdminModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

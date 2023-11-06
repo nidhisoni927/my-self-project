@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
 import {UserLoginComponent} from "../user/user-login/user-login.component";
 import {UserListComponent} from "../user/user-list/user-list.component";
-
-
+import {AdminComponent} from "./admin.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full'},
-  { path: 'login', component: UserLoginComponent },
-  { path: 'list' , component: UserListComponent},
+  {
+    path: '', component: AdminComponent, children: [
+      { path: 'login', component: UserLoginComponent },
+      { path: 'list' , component: UserListComponent},
+    ]
+  }
 ];
 
 @NgModule({

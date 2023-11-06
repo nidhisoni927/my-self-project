@@ -4,9 +4,10 @@ import {UserLoginComponent} from "./user-login/user-login.component";
 import {UserListComponent} from "./user-list/user-list.component";
 import {UserComponent} from "./user.component";
 
+
 const routes: Routes = [
   {
-    path: '', children: [
+    path: '', component: UserComponent, children: [
       {path: 'login', component: UserLoginComponent},
       {path: 'list', component: UserListComponent}
     ]

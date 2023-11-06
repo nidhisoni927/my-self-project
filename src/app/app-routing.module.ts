@@ -11,16 +11,12 @@ import {AdminListComponent} from "./admin/admin-list/admin-list.component";
 const routes: Routes = [
   { path: '', redirectTo: '/user/login', pathMatch: 'full' },
   {
-    path: 'admin', component: AdminComponent, children: [
-      { path: 'login', component: AdminLoginComponent },
-      { path: 'list' , component: AdminListComponent}
-    ]
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
-    path: 'user', component: UserComponent, children: [
-      { path: 'login', component: UserLoginComponent },
-      { path: 'list' , component: UserListComponent}
-    ]
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then(m => m.UserModule)
   },
   { path: '**', component: Error404Component }
 ];
