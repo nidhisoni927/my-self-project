@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-interface dataType{
+interface dataType {
   name:string,
   age:number,
   indian:boolean,
