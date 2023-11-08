@@ -19,7 +19,4 @@ export class AppComponent {
 
   }
 
-  protected readonly onsubmit = onsubmit;
 }
-
-
