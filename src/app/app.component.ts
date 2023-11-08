@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup, Validator, Validators,} from '@angular/forms';
+
 interface dataType {
   name:string,
   age:number,
@@ -14,18 +14,13 @@ interface dataType {
 })
 export class AppComponent {
   title = 'my-self-project';
- loginForm= new FormGroup({
-   email:new FormControl('',Validators.required),
-   password:new FormControl('')
+userData={
+   email:"test@gmail.com",
+  password:"123@zxc",
+  address:"pune",
+  mobile:"96321548"
 
- })
 
-  get email(){return this.loginForm.get('email')
 
-  }
-  onSubmit({data}: { data: any }) {
-    console.log(data)
-
-  }
-
+}
 }
