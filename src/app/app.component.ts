@@ -19,6 +19,10 @@ export class AppComponent {
    password:new FormControl('')
 
  })
+
+  get email(){return this.loginForm.get('email')
+
+  }
   onSubmit({data}: { data: any }) {
     console.log(data)
 
