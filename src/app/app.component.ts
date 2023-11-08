@@ -14,6 +14,12 @@ interface dataType {
 export class AppComponent {
   title = 'my-self-project';
 
+  onSubmit({data}: { data: any }) {
+    console.log(data)
 
+  }
 
+  protected readonly onsubmit = onsubmit;
 }
+
+
